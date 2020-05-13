@@ -1,0 +1,14 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+@model exo1tp2core.Models.User
+<h1 class="display-4">Welcome</h1>
+@using (Html.BeginForm("Login", "Home", FormMethod.Post))
+{
+<h1>identification</h1>
+<label>nom</label>
+<input type="text" name="nom" />
+<label>prenom</label>
+<input type="text" name="prenom" />
+<input type="submit" value="valider" /> 
+  }

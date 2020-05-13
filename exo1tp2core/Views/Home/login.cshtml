@@ -1,0 +1,9 @@
+﻿@model exo1tp2core.Models.User
+
+
+<h1>welcome  </h1>
+@ViewBag.nom
+@using (Html.BeginForm("Logout", "Home", FormMethod.Post))
+{
+    <button type="submit" >deconnection</button>
+}
